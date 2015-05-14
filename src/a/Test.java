@@ -6,6 +6,7 @@ import org.apache.commons.logging.LogFactory;
 public class Test {
 	// 在任何需要记录日志的类中
 	Log log = LogFactory.getLog(this.getClass());
+
 	public void one() {
 		log.info("into one method");
 		try {
@@ -14,6 +15,7 @@ public class Test {
 			log.error(e.getMessage());
 		}
 		log.info("out one method");
+		log.info("ddddddddddddddd");
 	}
 
 	public static void main(String[] args) {
